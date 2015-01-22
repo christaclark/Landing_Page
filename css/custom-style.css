@@ -1,32 +1,16 @@
-/*/////////////////////////////////////////////////////////////////////
- // 
- // Custom theme code styles
- // Written by Themelize.me (http://themelize.me)
- // 
- // This is an empty starter template for overriding styles
- // set by Bootstrap & the theme
- //
- // PUT ALL YOUR CUSTOM CSS CODE IN THIS FILE
- // 
- // ----------------------------------------------------
- // 
- // Remove unused code & commenting for better performances
- // 
- // ----------------------------------------------------
- // 
- // @see - Usefuls tools online for editing
- // 1. http://charliepark.org/bootstrap_buttons/ - Button style generator
- // 2. http://www.colorzilla.com/gradient-editor/ - CSS3 gradient maker
- // 
- // 
- /////////////////////////////////////////////////////////////////////*/
-/*
- * --------------------------------------------------
- * 1. Page Structure
- *--------------------------------------------------
- */
-#header {
-  /* 1. Navigation wrapper */
+
+ /* --------------------------------------------------
+    Page Structure
+ -------------------------------------------------- */
+##header {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: black;
+  padding: 60px 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 #content {
   /* 2. Content wrapper */
@@ -34,29 +18,73 @@
 #footer {
   /* 3. Footer wrapper */
 }
-/*
- * --------------------------------------------------
- * 2. Colours/Backgrounds
- *-------------------------------------------------- 
- */
-body.COLOUR-NAME {
-  /* Your new colour class to apply to body tag, see: css/theme-schemes.css file for examples */
 
-}
-#header.BACKGROUND-NAME {
-  /* Your new background class to apply to #header tag, see: css/theme-schemes.css file for examples */
 
+/****************** BACKGROUND YO!************************/
+/*** Background images  ***/
+
+
+#header .blue {
+  background-image: url('../img/backgrounds/background.png');
+  background-size: 1400px 492px;
 }
-/*
- * --------------------------------------------------
- * 3. Page Elements
- *--------------------------------------------------
- */
-/*
- * --------------------------------------------------
- * 4. Responsiveness/media queries
- *--------------------------------------------------
- */
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  #header .blue {
+    background-image: url('../img/backgrounds/background.png');
+    background-size: 1400px 492px;
+   
+  }
+
+/*  Other elements   */
+a {
+  color: #2f9fe6;
+}
+#header {
+  color: #addaf1;
+}
+#header .page-title,
+#header p,
+#header a {
+  color: #ffffff;
+}
+#header h1,
+#header h2,
+#header h3,
+#header h4,
+#header h5 {
+  margin: 0;
+}
+.features .sub-title {
+  color: #2f9fe6;
+}
+.signup-form .btn,
+.medias li .btn {
+  background: #2f9fe6;
+  color: #ffffff;
+}
+.signup-form .btn:hover,
+.medias li .btn:hover {
+  background: #1885ca;
+}
+.btn-primary {
+  background: #2f9fe6;
+  color: blue;
+}
+.btn-primary:hover {
+  background: #1885ca;
+}
+#schemes .backgrounds a.active {
+  border-color: #2f9fe6;
+}
+
+/*-------------------------------------------------
+        Page Elements
+ -------------------------------------------------*/
+
+
+/*--------------------------------------------------
+      Responsiveness/media queries
+ -------------------------------------------------*/
 @media (max-width: 979px) {
   /* Navbar Collapsed (mobile) */
 }
@@ -78,3 +106,15 @@ body.COLOUR-NAME {
 @media (max-width: 480px) {
   /* Responsive: Up to Landscape phone (mobile) */
 }
+/*--------------------------------------------------
+     5. Share buttons
+ -------------------------------------------------*/
+
+ #share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+
